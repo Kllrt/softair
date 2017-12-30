@@ -12,5 +12,7 @@ class CfgAmmo
 		visibleFire        = 3;
 		audibleFire        = 7;
 		model              = "\softair\addons\softair_weapons\ammo\6mm_bb";
+		tracerStartTime    = 0;
+		tracerScale        = 3;
 	};
 };
