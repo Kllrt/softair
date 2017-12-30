@@ -7,6 +7,6 @@ logoOver     = "softair\addons\softair_main\data\softair_logo_small_ca.paa";
 hidePicture  = 0;
 hideName     = 0;
 actionName   = "Website";
-action       = "";
+action       = "https://github.com/Kllrt/softair";
 description  = "SoftAir";
 overview     = "SoftAir";
