@@ -20,24 +20,34 @@ class softair_weap_ak74m: rhs_weap_ak74m
 	displayName      = "$STR_SA_WEAP_AK74M";
 	descriptionShort = "$STR_SA_WEAP_RIFLE_DESC";
 	baseWeapon       = "softair_weap_ak74m";
-	dlc = "SoftAir";
-
+	dlc              = "SoftAir";
+	model			 = "\softair\addons\softair_weapons\softair_ak74m.p3d";
 	magazines[] = 
 	{
 		"softair_mag_130Rnd_6mm_AK"
 	};
 
-	recoil = "softair_recoil_ak74m";
+	fireLightDiffuse[] = {0,0,0};
+	fireLightDuration  = 0;
+	fireLightIntensity = 0;
+	fireSpreadAngle    = 0;
+
+	selectionFireAnim = "";
+	recoil            = "softair_recoil_ak74m";
+	recoilProne       = "softair_recoil_ak74m";
 	class Single: Single
 	{
 		reloadTime = 0.05;
-		dispersion = 0.001;
+		dispersion = 0.01;
 	};
 	class FullAuto: FullAuto
 	{
 		reloadTime = 0.05;
-		dispersion = 0.001;
+		dispersion = 0.01;
 	};
+	class GunParticles{};
+	class GunFire{};
+	class GunClouds{};
 };
 
 //USA
@@ -47,7 +57,7 @@ class softair_weap_m4a1: rhs_weap_m4a1
 	displayName      = "$STR_SA_WEAP_M4A1";
 	descriptionShort = "$STR_SA_WEAP_RIFLE_DESC";
 	baseWeapon       = "softair_weap_m4a1";
-	dlc = "SoftAir";
+	dlc              = "SoftAir";
 
 	magazines[] = 
 	{
