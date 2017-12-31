@@ -23,3 +23,15 @@ class CfgMods
 		//fieldManualTopicAndHint[] = {};
 	};
 };
+
+class CfgMissions
+{
+	class MPMissions
+	{
+		class MP_TVT_RealSoftAir
+		{
+			briefingName="RealSoftAir";
+			directory="A3\missions_f\mpscenarios\MP_COOP_m01.Stratis";
+		};
+	};
+};
