@@ -21,12 +21,13 @@ class softair_weap_ak74m: rhs_weap_ak74m
 	descriptionShort = "$STR_SA_WEAP_RIFLE_DESC";
 	baseWeapon       = "softair_weap_ak74m";
 	dlc              = "SoftAir";
-	model			 = "\softair\addons\softair_weapons\softair_ak74m.p3d";
+	//model			 = "\softair\addons\softair_weapons\softair_ak74m.p3d"; //Testing edited model w/o bolt animations and muzzleFlash
 	magazines[] = 
 	{
 		"softair_mag_130Rnd_6mm_AK"
 	};
 
+	//Turned off light effects when firing
 	fireLightDiffuse[] = {0,0,0};
 	fireLightDuration  = 0;
 	fireLightIntensity = 0;
@@ -35,6 +36,8 @@ class softair_weap_ak74m: rhs_weap_ak74m
 	selectionFireAnim = "";
 	recoil            = "softair_recoil_ak74m";
 	recoilProne       = "softair_recoil_ak74m";
+
+	//Adjusting weapon RPM to 1200 and dispersion to make it somewhat close to airsoft rifle
 	class Single: Single
 	{
 		reloadTime = 0.05;
@@ -45,6 +48,7 @@ class softair_weap_ak74m: rhs_weap_ak74m
 		reloadTime = 0.05;
 		dispersion = 0.01;
 	};
+	//No effects for the rifle
 	class GunParticles{};
 	class GunFire{};
 	class GunClouds{};
