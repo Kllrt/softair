@@ -1,2 +1,2 @@
 # softair
-Just soft air, nothing more.
+Just fun project which introduces airsoft into Arma 3
